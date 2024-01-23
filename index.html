@@ -20,69 +20,298 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="w-10/12 mx-auto">
-    <!-- navbar start -->
-    <nav>
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+  <body>
+    <div class="w-10/12 mx-auto">
+      <!-- navbar start -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+                <li><a class="text-lg">Home</a></li>
+                <li><a class="text-lg">About</a></li>
+                <li><a class="text-lg">Pages</a></li>
+                <li><a class="text-lg">Blog</a></li>
+                <li><a class="text-lg">Contact</a></li>
+              </ul>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Pages</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact</a></li>
+            <p class="HockeyS">
+              <span
+                class="text-neutral-900 text-2xl font-extrabold font-['Manrope']"
+                >Hockey</span
+              ><span
+                class="text-red-500 text-2xl font-extrabold font-['Manrope']"
+                >’</span
+              ><span
+                class="text-neutral-900 text-2xl font-extrabold font-['Manrope']"
+                >s</span
+              >
+            </p>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-red-500 text-lg">Home</a></li>
+              <li><a class="text-lg">About</a></li>
+              <li><a class="text-lg">Pages</a></li>
+              <li><a class="text-lg">Blog</a></li>
+              <li><a class="text-lg">Contact</a></li>
             </ul>
           </div>
-          <p class="HockeyS">
-            <span
-              class="text-neutral-900 text-2xl font-extrabold font-['Manrope']"
-              >Hockey</span
-            ><span class="text-red-500 text-2xl font-extrabold font-['Manrope']"
-              >’</span
-            ><span
-              class="text-neutral-900 text-2xl font-extrabold font-['Manrope']"
-              >s</span
+          <div class="navbar-end">
+            <button
+              class="btn text-white text-lg font-bold font-['Manrope'] bg-red-500 px-6 hover:bg-red-700 transition ease-in-out hover:scale-[105%]"
             >
-          </p>
+              Get Ticket
+            </button>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="text-red-500">Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Pages</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <button
-            class="btn text-white text-lg font-bold font-['Manrope'] bg-red-500 px-6 hover:bg-red-700 transition ease-in-out hover:scale-[105%]"
+      </nav>
+      <!-- nav bar end -->
+
+      <!-- banner section start-->
+      <!-- slider section -->
+      <div class="carousel w-full rounded-xl mt-7">
+        <div id="slide1" class="carousel-item relative w-full min-h-56">
+          <img
+            src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0"
           >
-            Get Ticket
-          </button>
+            <a
+              href="#slide4"
+              class="btn btn-circle bg-neutral-900 border-none text-white font-black"
+              >❮</a
+            >
+            <a
+              href="#slide2"
+              class="btn btn-circle bg-neutral-900 border-none text-white font-black"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0"
+          >
+            <a
+              href="#slide1"
+              class="btn btn-circle bg-neutral-900 border-none text-white font-black"
+              >❮</a
+            >
+            <a
+              href="#slide3"
+              class="btn btn-circle bg-neutral-900 border-none text-white font-black"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0"
+          >
+            <a
+              href="#slide2"
+              class="btn btn-circle bg-neutral-900 border-none text-white font-black"
+              >❮</a
+            >
+            <a
+              href="#slide4"
+              class="btn btn-circle bg-neutral-900 border-none text-white font-black"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0"
+          >
+            <a
+              href="#slide3"
+              class="btn btn-circle bg-neutral-900 border-none text-white font-black"
+              >❮</a
+            >
+            <a
+              href="#slide1"
+              class="btn btn-circle bg-neutral-900 border-none text-white font-black"
+              >❯</a
+            >
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- nav bar end -->
+      <!-- meet player section -->
+      <div
+        class="mt-4 px-6 py-7 bg-neutral-900 rounded-xl flex-col justify-start items-start gap-2 inline-flex"
+      >
+        <p
+          class="self-stretch text-white text-lg font-extrabold font-['Manrope'] capitalize"
+        >
+          Meet all the heroes from the field
+        </p>
+        <p
+          class="self-stretch text-white text-opacity-60 text-sm font-medium font-['Manrope'] leading-normal"
+        >
+          Rink Royalty: Unveiling the prowess of our hockey heroes. Brace
+          yourself for a display of skill, power, and teamwork that defines our
+          team's legacy on the ice. Meet the legends in action where every match
+          is a showcase of their unstoppable spirit!
+        </p>
+      </div>
+      <!-- banner section end  -->
+
+      <!-- professional hockey club -->
+      <div class="my-10 border-y-2 border-dashed p-6">
+        <p
+          class="text-center text-neutral-900 text-2xl font-extrabold font-['Manrope']"
+        >
+          Professional Hockeys Club
+        </p>
+        <p
+          class="mt-4 text-center text-neutral-900 text-opacity-60 text-sm font-medium font-['Manrope'] leading-normal"
+        >
+          As hockey professionals, we redefine excellence on the ice. Skill,
+          determination, and a rich legacy drive us to victory. Join us in the
+          thrilling world of our elite club.
+        </p>
+      </div>
+      <!-- radial progress -->
+      <div>
+        <div class="flex flex-col items-center mb-5">
+          <div
+            class="radial-progress text-red-500"
+            style="--value: 87; --size: 10rem"
+            role="progressbar"
+          >
+            <span
+              class="text-neutral-900 text-4xl font-extrabold font-['Manrope']"
+              >87%</span
+            >
+          </div>
+          <p
+            class="text-center text-neutral-900 text-2xl my-4 font-semibold font-['Manrope']"
+          >
+            Prayer Facility
+          </p>
+          <p
+            class="text-center text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"
+          >
+            At our player facility, excellence is paramount. Tailored for peak
+            performance, it combines advanced training resources with dedicated
+            recovery spaces, empowering athletes for success on and off the ice.
+          </p>
+        </div>
+        <div class="flex flex-col items-center mb-5">
+          <div
+            class="radial-progress text-emerald-400"
+            style="--value: 95; --size: 10rem"
+            role="progressbar"
+          >
+            <span
+              class="text-neutral-900 text-4xl font-extrabold font-['Manrope']"
+              >95%</span
+            >
+          </div>
+          <p
+            class="text-center text-neutral-900 text-2xl my-4 font-semibold font-['Manrope']"
+          >
+            Experienced Coach
+          </p>
+          <p
+            class="text-center text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"
+          >
+            Guiding with a wealth of experience, our coach is a strategic
+            mastermind, sculpting champions with a proven track record. Under
+            their seasoned leadership, our team thrives and excels on the path
+            to victory.
+          </p>
+        </div>
+        <div class="flex flex-col items-center mb-5">
+          <div
+            class="radial-progress text-amber-300"
+            style="--value: 80; --size: 10rem"
+            role="progressbar"
+          >
+            <span
+              class="text-neutral-900 text-4xl font-extrabold font-['Manrope']"
+              >80%</span
+            >
+          </div>
+          <p
+            class="text-center text-neutral-900 text-2xl my-4 font-semibold font-['Manrope']"
+          >
+            Senior Player
+          </p>
+          <p
+            class="text-center text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"
+          >
+            As a senior player, their seasoned prowess adds a touch of wisdom to
+            the team's dynamics, serving as a mentor and a formidable force on
+            the ice. With a wealth of experience.
+          </p>
+        </div>
+        <div class="flex flex-col items-center mb-5">
+          <div
+            class="radial-progress text-blue-500"
+            style="--value: 90; --size: 10rem"
+            role="progressbar"
+          >
+            <span
+              class="text-neutral-900 text-4xl font-extrabold font-['Manrope']"
+              >90%</span
+            >
+          </div>
+          <p
+            class="text-center text-neutral-900 text-2xl my-4 font-semibold font-['Manrope']"
+          >
+            Training Ground
+          </p>
+          <p
+            class="text-center text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"
+          >
+            At our cutting-edge training ground, precision meets innovation as
+            athletes hone their skills. The facility is a hub of excellence,
+            providing the ideal environment for rigorous training and
+            performance enhancement
+          </p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- footer start -->
+
+    <!-- footer end -->
   </body>
 </html>
