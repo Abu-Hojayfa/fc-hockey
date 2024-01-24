@@ -22,3 +22,9 @@
     ),
     url("./images/4.png");
 }
+
+@media screen and (min-width: 1024px) {
+  .radial-progress{
+    --size: 7rem !important;
+  }
+}
