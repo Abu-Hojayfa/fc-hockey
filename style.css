@@ -24,7 +24,10 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .radial-progress{
+  .radial-progress {
     --size: 7rem !important;
+  }
+  footer .text-center {
+    text-align: left;
   }
 }
